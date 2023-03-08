@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #ccccc;
+        border: 5px solid peru;
+        height: 100vh;
+        box-sizing: border-box;
+      }
+      .caja-1 {
+        border: 1px solid red;
+        width: 200px;
+        height: 100px;
+        /* overflow: hidden; */
+        overflow-y: scroll;
+      }
+      .span-1 {
+        border: 1px solid blue;
+        width: 200px;
+        height: 100px;
+      }
+      .caja-2 {
+        border: 1px solid blue;
+        height: 100px;
+        width: 200px;
+        overflow-x: scroll;
+      }
+      .parrafo-grande {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="caja-1">
+      algo de contenido mas contenido y mas contenido, Lorem ipsum dolor sit
+      amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+    <span class="span-1">un span</span>
+    <div class="caja-2">
+      <p class="parrafo-grande">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </body>
+</html>
