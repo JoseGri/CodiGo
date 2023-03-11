@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "nav section section adise"
+    "footer footer footer footer";
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px 150px;
+
+    /*shorband*/
+    grid-template:
+    "header header header header" 150px
+    "nav section section adise" 150px
+    "footer footer footer footer" 150px /
+    150px 150px 150px 150px;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+aside {
+    grid-area: aside;
+}
+
+section {
+    grid-area: section;
+}
+
+footer {
+    grid-area: footer;
+}

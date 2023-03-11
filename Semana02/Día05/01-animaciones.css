@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-x: hidden;
+}
+
+.texto-animado {
+  /* una animación está compuesta por un nombre y un tiempo */
+  animation-name: texto-volador;
+  animation-duration: 5s;
+  animation-iteration-count: 10;
+  border: solid;
+}
+
+/* activa animaciones con keyframes*/
+@keyframes texto-volador {
+  from {
+    margin-left: 100%;
+    width: 300%;
+    background-color: aqua;
+    border: none;
+  }
+  to {
+    margin-left: -100%;
+    background-color: brown;
+    color: white;
+    border: none;
+  }
+}
+
+.Imagen-animada {
+    animation-name: image-resize;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    width: 400px;
+    height: 400px;
+  }
+  @keyframes image-resize {
+    from {
+        width: 20px;
+        height: 20px;
+    }
+    to {
+        width: 400px;
+        height: 400px;
+    }
+  }
+
+  .box-uno {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    animation-name: box-animation;
+    animation-duration: 5s;
+  }
+  @keyframes box-animation {
+    0% {
+        background-color: black;
+    }
+    25% {
+        background-color:sandybrown;
+    }
+    50% {
+        background-color: rgb(34, 0, 128);
+    }
+    75% {
+        background-color: blueviolet;
+    }
+    100% {
+        background-color: green;
+    }
+  }
+
+
+.box-dos {
+    height: 200px;
+    width: 200px;
+    background-image: url(./Asco2.jpg);
+    animation-name: box-anima;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+ 
+  @keyframes box-anima {
+    0% {
+      background-image: url(./Imagen-animada.JPG);
+  }
+  25% {
+      background-image: url(./49077047_296918121012052_4014368874869817344_n.jpg);
+  }
+  50% {
+      background-image: url(./Asco2.jpg);
+  }
+  75% {
+      
+  }
+  100% {
+     
+  }
+}
+
+.ball-uno {
+  height: 100px;
+  width: 100px;
+  border: solid green 2px;
+  border-radius: 50%;
+  animation-name: ball-animation;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  background-color: blue;
+}
+
+@keyframes ball-animation {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-130px);
+  }
+}
