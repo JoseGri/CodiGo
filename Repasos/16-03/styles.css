@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  color: blue;
+}
+
+.flex-container {
+  display: flex;
+  /* el flex-direction reverse (row o column) invierte el inicio, es decir de atras para adelante o de abajo para arriba*/
+  flex-direction: column;
+  /* justify-content es para flex-direction: column (VERTICAL) osea main axis (eje principal)*/
+  justify-content: center;
+  /* align-items es para flex-direction: row (HORIZONTAL por defecto) osea cross axis (eje secundario) */
+  /* justify-content y align-items se pueden usar al mismo tiempo para mover al medio del cuadrado (cuadrante 0) */
+  align-items: center;
+  justify-content: ;
+  width: 600px;
+  height: 600px;
+  background-color: rgb(201, 227, 107);
+  color: indigo;
+}
+
+.flex-item {
+  background-color: lightskyblue;
+  color: blueviolet;
+  font-size: 50px;
+}
+
+/* nth-child es para seleccionar los hijos, odd selecciona los impares y even selecciona los pares */
+.flex-item:nth-child(odd) {
+  background-color: lightcoral;
+}
+
+/* div {
+  width: 600px;
+  height: 600px;
+  background-color: rgb(201, 227, 107);
+  color: indigo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */

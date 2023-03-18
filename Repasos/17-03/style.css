@@ -1,0 +1,53 @@
+.contenedor {
+  border: 5px solid #e1bee7;
+  background-color: #fff1ff;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+
+  /* grid-auto-ROWS está por defecto */
+  grid-auto-rows: 150px;
+
+  /* grid-auto-flow: ROWS está por defecto, coloca los items uno al lado de otro */
+  /* grid-auto-flow: ROWS llena primero columnas y luego filas 
+  y COLUMNS llena primero filas y luego columunas */
+  /* grid-auto-flow: column; */
+
+  /* gap: Espacio en filas y columunas*/
+  gap: 30px;
+
+  /* row-gap: Espacio en filas*/
+  /* row-gap: 15px; */
+
+  /* column-gap: Espacio en columunas*/
+  /* column-gap: 15px; */
+
+  height: 600px;
+
+/* justify-content (start, center y end), mueve la grilla de izquierda a derecha de forma HORIZONTAL */
+  /* justify-content: start; */
+
+/* align-content (start, center y end), mueve la grilla de izquierda a derecha de forma VERTICAL */  
+  /* align-content: center; */
+
+/* place-content: (start, center y end) mueve la grilla de izquierda a derecha de forma DIAGONAL*/  
+  place-content: center;
+
+/* justify-items (start, center y end), mueve la grilla de izquierda a derecha de forma HORIZONTAL */
+  justify-items: center;
+
+/* align-items (start, center y end), mueve la grilla de izquierda a derecha de forma VERTICAL */  
+  align-items: start;
+
+/* place-items: (start, center y end) mueve la grilla de izquierda a derecha de forma DIAGONAL*/  
+  /* place-items: center; */
+}
+
+.item {
+  border: 5px solid #00bcd4;
+  font-size: 4rem;
+}
+
+.item-5 {
+    align-self: end;
+    justify-self: end;
+}
