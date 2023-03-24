@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Funciones</h1>
+    <button onclick="nombreDeLaFuncion()">Invocar</button>
+    <button onclick="nombreDeLaFuncion(alert('Hola mundo'))">Otro botón</button>
+
+    <p>Ingresa usuarios</p>
+    <input type="text" id="nombreUsuario" />
+    <button onclick="mostrarNombre()">INGRESAR</button>
+    <h1 id="reemplazo">No se tu nombre</h1>
+
+    <!--------------ejercicio 1------------->>
+    <h2>Ejercicio 1</h2>
+    <input type="text" id="inputTexto" />
+    <button onclick="mostrarTexto()">Click aquí</button>
+    <h1 id="titulo"></h1>
+
+    <!--------------ejercicio 2------------->>
+    <!--Captudad el value y tener de resultado "mi artista favorito es Bad Bunny"-->
+
+    <h2>Ejercicio 2</h2>
+    <input type="text" id="inputTexto2" value="Bad Bunny" />
+    <button onclick="mostrarTexto2()">Click aquí</button>
+    <h1 id="titulo2"></h1>
+
+    <!--------------Ejemplo 1------------->>
+    <button onclick="comenzarAlarma()">ALARMA</button>
+
+    <!--------------Ejemplo 2------------->>
+    <input type="number" id="tiempoElegido">
+    <button onclick="comenzarTiempo()">ALARMA 2</button>
+    <h1 id="textoAlarma" style="color:red">APAGADO</h1>
+
+
+
+  </body>
+  <script src="./02-funciones.js"></script>
+</html>
